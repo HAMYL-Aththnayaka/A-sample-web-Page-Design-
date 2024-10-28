@@ -1,0 +1,117 @@
+/* Reset some default styles for browsers */
+
+/*for this design what changes i need to do in this css code?*/
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		/* Style the header with a background color and center-align the text */
+		header {
+			background-color: #0077b6;
+			text-align: center;
+			padding: 10px;
+			display: flex;
+			justify-content: space-between; /* Place the logo and menu items at each end */
+			align-items: center; /* Vertically center align the logo and menu items */
+
+		}
+
+		/* Style the navigation menu */
+		nav ul {
+			list-style-type: none;
+		}
+
+		nav li {
+			display: inline;
+			margin-right: 20px;
+		}
+
+		nav a {
+			text-decoration: none;
+			color: white;
+		}
+		
+		#logo {
+			max-width: 100px; /* Set the maximum width for the logo */
+		}
+
+		/* Style the three columns */
+		.column {
+			width: 30%;
+			float: left;
+			padding: 20px;
+		}
+
+		/* Add some margin between the columns */
+		#first-column {
+			margin-right: 20px;
+		}
+
+		/* Style headings and content within the columns */
+		h2 {
+			font-size: 24px;
+			margin-bottom: 10px;
+			color: #0077b6;
+		}
+
+		/* Add some spacing within lists */
+		ul {
+			padding-left: 20px;
+		}
+
+		/* Style links within the columns */
+		a {
+			text-decoration: none;
+			color: #0077b6;
+		}
+
+		/* Add a subtle border and shadow to the columns for separation */
+		.column {
+			border: 1px solid #ddd;
+			border-radius: 5px;
+			box-shadow: 2px 2px 5px #ccc;
+			background-color: #f5f5f5;
+		}
+
+		/* Style the main content area */
+		main {
+			display: flex;
+			justify-content: space-between;
+			padding: 20px;
+			background-color: #f0f0f0;
+			margin: 20px;
+		}
+		
+		#second-column ul {
+        list-style: none; /* Remove default list markers */
+		}
+
+		#second-column ul li:before {
+			content: "\2022"; /* Use a custom marker (in this case, a filled circle) */
+			color: #0077b6; /* Change the color of the marker */
+			font-size: 20px; /* Adjust the size of the marker */
+			margin-right: 10px; /* Add some spacing between the marker and the list item text */
+		}
+		
+		 .services {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .service {
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 2px 2px 5px #ccc;
+        }
+		
+		
+		 footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            clear: both; /* Ensure the footer clears the floated columns */
+        }
